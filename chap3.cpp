@@ -22,8 +22,8 @@ int main() {
 	//s5.copy(s4);
 	cout << "s5 is "<<s5 << endl;
 
-	string *p1;
-	p1 = &s5;
+	string *p;
+	p = &s5;
 
 
 	s1 = s2;
@@ -40,6 +40,26 @@ int main() {
 	cout << "s2 is " << s2.capacity() << endl;
 
 	cout << "s2 is " << s2.c_str() << endl;
+
+
+
+	string a1("test");
+	string a2 = "test2";
+
+	a2 = a1;
+	if (a1 == a2) {
+		cout << "equal" << endl;
+
+	}
+	cout << "a2 is " << a2 << endl;
+
+
+	string *p1 = new string("test");
+	string *p2 = new string("test");
+	if (p1 == p2) {
+		cout << " p equal" << endl;
+
+	}
 
 	return 0;
 }
